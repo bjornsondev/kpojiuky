@@ -1,0 +1,30 @@
+h1 #pleasant-word{display:block;white-space:nowrap;max-width:100%;line-height:1.08}h1{line-height:1.01}
+.scattered{max-width:1240px;position:relative;margin:0 auto;isolation:isolate}
+.scattered .photo{position:absolute;left:0;top:0;right:auto;bottom:auto;margin:0!important;max-width:none;transform:rotate(var(--angle,0deg));z-index:2;transition:transform .25s,box-shadow .25s}
+.scattered .photo:hover,.scattered .photo:focus-within{transform:rotate(0deg) translateY(-5px);z-index:6}
+.scattered .photo img{width:100%;height:auto;aspect-ratio:var(--aspect,1);object-fit:cover}
+.scattered .photo:nth-of-type(3n) .tape{background:#c9d0e593;transform:rotate(-8deg)}
+.scattered .photo:nth-of-type(4n){background:#e8e7e1}
+.scattered .photo:nth-of-type(5n) .tape{background:#d8d3e69e}
+.scattered .collage-piece{position:absolute;left:0;right:auto;top:0;bottom:auto;margin:0;max-width:none;transform:rotate(var(--angle,0deg));z-index:1;overflow-wrap:break-word;pointer-events:none}
+.scattered .paper-note{height:auto;min-height:97px;padding:18px 16px;font:italic 21px/1.2 Georgia;color:#56516a}
+.scattered .ticket{padding:11px 12px;gap:6px}
+.scattered .field-note{font:italic 19px/1.45 Georgia;color:#f4f1ee;text-shadow:0 2px 8px #20372f}
+.scattered .field-note span{margin-top:4px}
+.torn-note{background:#e5dfdb;color:#59516a;padding:14px 14px 20px;font:16px/1.35 Georgia;box-shadow:0 5px 12px #142b3b3b;clip-path:polygon(0 0,100% 0,100% 94%,94% 100%,88% 95%,80% 100%,72% 96%,65% 100%,58% 95%,48% 100%,40% 95%,30% 100%,20% 96%,10% 100%,0 95%)}
+.torn-note em{font-weight:normal}.torn-note>span{display:block;margin-top:9px;font-size:20px;text-align:right}
+.hand-note{font:italic 22px/1.35 Georgia;color:#eff0ef;text-shadow:0 2px 6px #243b4c}
+.hand-note>span{display:block;text-align:right;margin-top:4px;font-size:30px;line-height:1}.tender-note{color:#f0e7ed}.tiny-note{font-size:17px}
+.mini-ticket{padding:11px 12px;background:#d7dddf;border:1px solid #a3afb7;border-left:3px dotted #9da9b3;border-right:3px dotted #9da9b3;color:#505c6d;box-shadow:0 3px 10px #192b4233;font:8px var(--pixel);letter-spacing:1px}
+.mini-ticket>b{display:block;font:italic 23px Georgia;letter-spacing:0;margin:5px 0 9px}.ticket-dots{font:13px/1.3 var(--pixel);letter-spacing:0;white-space:nowrap}
+.ruled-note{position:relative;background:repeating-linear-gradient(#e8e5e1 0,#e8e5e1 23px,#aebccc8c 23px,#aebccc8c 24px);padding:13px 13px 20px;color:#554f65;font:italic 19px/24px Georgia;box-shadow:0 5px 14px #24384d40}
+.ruled-note::before{content:'';position:absolute;top:0;bottom:0;left:8px;border-left:1px solid #b68d9c75}.little-heart{display:block;text-align:right;font-size:24px;margin-top:3px}
+.postmark{color:#dad6e8;border:2px solid #dad6e8a6;border-radius:50%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;flex-direction:column;text-shadow:0 2px 6px #314255;padding:8px;font:8px var(--pixel);letter-spacing:1.5px;outline:1px solid #dad6e875;outline-offset:-7px}.postmark>span:first-child{font:italic 22px Georgia;letter-spacing:0}.postmark b{font-weight:normal;font-size:7px;margin-top:3px}.postmark>span:last-child{font:24px Georgia;line-height:1.1}
+.fold-note{background:#d7d9e4;color:#565266;padding:17px 15px;font:italic 20px/1.3 Georgia;box-shadow:0 5px 15px #1a2c423b}.fold-note::after{content:'';position:absolute;right:0;top:0;border-top:17px solid #a9b7cd;border-left:17px solid #f3f0f6}.fold-note>span{display:block;text-align:right;margin-top:6px;font:25px Georgia}
+.scattered .silver-star{font:65px/1 Georgia;text-align:center;color:#e8eaf3;text-shadow:1px 1px #6c7896,-1px -1px white,0 6px 10px #243e5655}.scattered .outline-star{font-size:55px}.chrome-heart{font:64px/1 Georgia;text-align:center;color:#e3e1ef;text-shadow:2px 2px #77809e,-1px -1px white,0 6px 13px #172d4650}
+.portrait-anchor{position:absolute;pointer-events:none;width:1px;height:1px}
+.scattered:not(.arranged){height:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:35px;padding:50px 25px}.scattered:not(.arranged) .photo,.scattered:not(.arranged) .collage-piece{position:relative;width:100%}
+@media(max-width:760px){.scattered .photo{padding:8px 8px 12px}.scattered .photo figcaption{font-size:12px;line-height:1.25}.scattered .collage-piece{overflow-wrap:anywhere}.scattered .paper-note{font-size:19px;padding:17px 12px;min-height:90px}.scattered .field-note{font-size:15px;line-height:1.4}.scattered .hand-note{font-size:17px}.scattered .tiny-note{font-size:14px}.scattered .torn-note{font-size:14px;padding:13px 11px 18px}.scattered .fold-note{font-size:17px;padding:15px 11px}.scattered .ruled-note{font-size:16px}.scattered .ticket{padding:10px 9px;font-size:7px;letter-spacing:.3px}.scattered .ticket b{font-size:11px}.scattered .mini-ticket{padding:10px 8px}.scattered .mini-ticket>b{font-size:19px}.scattered .ticket-dots{font-size:10px}.scattered:not(.arranged){grid-template-columns:repeat(2,minmax(0,1fr));gap:25px;padding:35px 10px}}
+@media(max-width:380px){.scattered .photo figcaption{font-size:11px}.scattered .paper-note{font-size:17px}.scattered .field-note{font-size:14px}.scattered .hand-note{font-size:16px}.scattered .tiny-note{font-size:13px}}
+.intro{min-width:0}.hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.scattered .silver-star,.scattered .chrome-heart,.scattered .postmark{z-index:4}
