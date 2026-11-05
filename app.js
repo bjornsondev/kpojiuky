@@ -151,7 +151,7 @@ copy.addEventListener('click',async()=>{
 });
 
 const dialog=document.querySelector('#gallery-dialog');
-const photos=[...document.querySelectorAll('.photo')].map(figure=>({src:figure.querySelector('img').getAttribute('src'),alt:figure.querySelector('img').alt,caption:figure.querySelector('figcaption').textContent}));
+const photos=[...document.querySelectorAll('.photo')].map(figure=>({src:figure.querySelector('img').dataset.full||figure.querySelector('img').getAttribute('src'),alt:figure.querySelector('img').alt,caption:figure.querySelector('figcaption').textContent}));
 let photoIndex=0, photoOpener;
 function showPhoto(index){
   photoIndex=(index+photos.length)%photos.length;
